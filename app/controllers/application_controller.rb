@@ -13,6 +13,7 @@ def authenticate_user_from_token
     @current_user ||= User.find_by(id: auth_token[:user_id])
   else
     nill
+  end
 end
 
 def render_unauthorized
